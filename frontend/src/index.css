@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #faaca8;
+  background-image: linear-gradient(19deg, #faaca8 0%, #ddd6f3 100%);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #b799df;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  position: absolute;
+  animation: move 20s linear infinite;
+  background: currentColor;
+  opacity: 0.7;
+  animation: move 20s linear infinite;
+  filter: blur(40px);
+}
+
+.background span:nth-child(1) { color: #FDB813;left: 20%; animation-duration: 18s; }
+.background span:nth-child(2) { color: #E1C59A; top: 40%; left: 70%; animation-duration: 20s }
+.background span:nth-child(3) { color: #FDB813; top: 80%; left: 40%; animation-duration: 22s }
+.background span:nth-child(4) { color: #E1C59A; top: 10%; left: 90%; animation-duration: 25s }
+.background span:nth-child(5) { color: #FDB813; top: 70%; left: 10%; animation-duration: 20s }
+.background span:nth-child(6) { color: #E1C59A; top: 50%; left: 50%; animation-duration: 30s }
+.background span:nth-child(7) { color: #FDB813; top: 30%; left: 30%; animation-duration: 18s }
+.background span:nth-child(8) { color: #E1C59A; top: 80%; left: 80%; animation-duration: 26s }            
+.background span:nth-child(9) { color: #FDB813; top: 20%; left: 40%; animation-duration: 24s }
+.background span:nth-child(10) { color: #E1C59A; top: 60%; left: 20%; animation-duration: 28s }
+.background span:nth-child(11) { color: #FDB813; top: 40%; left: 60%; animation-duration: 22s }
+.background span:nth-child(12) { color: #E1C59A; top: 10%; left: 20%; animation-duration: 19s }
+.background span:nth-child(13) { color: #FDB813; top: 90%; left: 70%; animation-duration: 27s }
+.background span:nth-child(14) { color: #E1C59A; top: 30%; left: 90%; animation-duration: 23s }
+.background span:nth-child(15) { color: #FDB813; top: 70%;  left: 40%; animation-duration: 21s }
+.background span:nth-child(16) { color: #E1C59A; top: 50%; left: 10%; animation-duration: 29s }
+.background span:nth-child(17) { color: #FDB813; top: 20%; left: 80%; animation-duration: 25s }
+.background span:nth-child(18) { color: #E1C59A; top: 80%; left: 30%; animation-duration: 24s }
+.background span:nth-child(19) { color: #FDB813; top: 40%; left: 50%; animation-duration: 22s }
+.background span:nth-child(20) { color: #E1C59A; top: 10%; left: 60%; animation-duration: 20s }
+
+
+@keyframes move {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
+
+
